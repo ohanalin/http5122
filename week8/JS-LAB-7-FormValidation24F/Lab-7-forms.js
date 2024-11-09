@@ -23,7 +23,7 @@ window.onload = function() {
         // Input fields
         var nameValue = formHandle.f_Name;
         var postcodeValue = formHandle.f_pc;
-        var customerSpeed = formHandle.f_speed;
+        var customerSpeed = formHandle.f__program;
 
         // Display elements for feedback
         var CustomerName = document.getElementById("thanksCustomer");
