@@ -1,0 +1,54 @@
+* LAB 8.2 - STOP TIME */
+
+
+//create page load listener
+window.onload=pageReady;
+//create page load function
+function pageReady(){
+	//create variables for required HTML elements
+	
+	//create time variable so all functions have access to it
+	
+	// console.log(myhour,myMinutes,mySeconds);
+	var hours=document.getElementById("hoursOut");
+	var minuts=document.getElementById("minsOut");
+	var seconds=document.getElementById("secsOut");
+	var start=document.getElementById("btnStart");
+	var stop=document.getElementById("btnStop");
+	var timeStarts
+	
+	//CREATE FUNCTION THAT DISPLAYS THE TIME
+	function time(){
+	var dateVar=new Date();
+	myhour=dateVar.getHours();
+	myMinutes=dateVar.getMinutes();
+	mySeconds=dateVar.getSeconds();
+	hours.innerHTML=myhour;
+	newTime(myMinutes,minuts);
+	newTime(mySeconds,seconds);
+	}
+	//CREATE FUNCTION TO START THE CLOCK.
+	function clockStart(){
+		 timeStarts=setInterval(time,1000);
+		 time();
+	}
+	
+	//CREATE FUNCTION TO STOP THE CLOCK
+	function clockStop(){
+		clearInterval(timeStarts);
+		return false;
+	}
+	function newTime(times,var2){
+		if(times<10){
+			var2.innerHTML=":0"+times;
+		}else{
+			var2.innerHTML=":"+times;
+		}
+		
+	}
+	
+	// SET EVENT LISTENERS
+start.onclick=clockStart;
+stop.onclick=clockStop;
+time();
+}
