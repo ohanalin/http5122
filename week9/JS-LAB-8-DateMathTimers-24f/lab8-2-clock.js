@@ -10,11 +10,11 @@ function goNow() {
 
 	
 	//create time variable so all functions have access to it
-	var StartBtn = document.getElementById("btnStart");
-	var StopBtn = document.getElementById("btnStop");
-	var NowHours = document.getElementById("hoursOut");
-	var NowMins = document.getElementById("minsOut");
-	var NowSecs = document.getElementById("secsOut");
+	var startBtn = document.getElementById("btnStart");
+	var stopBtn = document.getElementById("btnStop");
+	var nowHours = document.getElementById("hoursOut");
+	var nowMins = document.getElementById("minsOut");
+	var nowSecs = document.getElementById("secsOut");
 	var timeStarts;
 	
 	//CREATE FUNCTION THAT DISPLAYS THE TIME
@@ -24,9 +24,9 @@ function goNow() {
 		var Hours = dateVar.getHours();
 		var Mins = dateVar.getMinutes();
 		var Secs = dateVar.getSeconds();
-		Hours.innerHTML=NowHours;
-		newTime(Mins,NowMins);
-		newTime(Secs,NowSecs);
+		nowHours.innerHTML= Hours;
+		nowMins.innerHTML=newTime(Mins);
+		nowSecs.innerHTML=newTime(Secs);
 	}
 	
 	//CREATE FUNCTION TO START THE CLOCK.
@@ -39,20 +39,21 @@ function goNow() {
 	//CREATE FUNCTION TO STOP THE CLOCK
 	function clockStop(){
 		clearInterval(timeStarts);
-		return false;
+	
 	}
-	function newTime(times,zero){
+	
+	function newTime(times){
 		if(times<10){
-			zero.innerHTML= ":0"+times;
+			return ":0"+times;
 		}else{
-			zero.innerHTML=":"+times;
+			return ":"+times;
 		}
 		
 	}
 	
 	
 	// SET EVENT LISTENERS
-	StartBtn.onclick=clockStart;
-	StopBtn.onclick=clockStop
+	startBtn.onclick=clockStart;
+	stopBtn.onclick=clockStop;
 	time();
 }
