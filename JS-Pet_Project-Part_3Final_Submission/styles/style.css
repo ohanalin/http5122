@@ -28,9 +28,31 @@ h1 , h3{
     margin: 0.5rem auto;
     color:#ae009a ;
 }
-.submitbtn{
-    display: flex;
+
+.soap-result{
+ margin: auto;
+max-width: 1000px;
+ display: grid;
+grid-template-columns:1fr 1fr;   
+gap: 10px;
+grid-template-areas:
+    "a b";
+}
+
+.soap-img{
+    grid-area: a;
+}
+.soap-info{
+    grid-area: b;
+    
+}
+.soappy{
     align-items: center;
+width:70%;
+}
+.btn{
+    display: inline-block;
+   
     background-color:#06917A;
     color: #ffffff;
     padding: 1rem;
@@ -38,12 +60,9 @@ h1 , h3{
     text-align: center;
     border-radius:1rem;
     border:none;
-    margin
     
 }
-
-
-.submitbtn:disabled {
+.btn:disabled {
     background-color: red
  }
  .letter{
