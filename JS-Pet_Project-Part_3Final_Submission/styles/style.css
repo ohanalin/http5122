@@ -1,4 +1,5 @@
 body{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color:#D6FAF4;
 }
@@ -21,6 +22,11 @@ h1 , h3{
     background-color: black;
     color: aliceblue;
     border-radius: .5rem;
+}
+.error{
+    display: none;
+    margin: 0.5rem auto;
+    color:#ae009a ;
 }
 .submitbtn{
     display: flex;
