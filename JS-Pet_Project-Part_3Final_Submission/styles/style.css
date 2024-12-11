@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -9,9 +10,10 @@ h3 {
     text-align: center;
 }
 
+/* Form Styles */
 .formstyle {
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
     flex-direction: row;
 }
 
@@ -23,23 +25,22 @@ h3 {
     display: block;
 }
 
+/* Subtitle Styles */
 .subtitle {
     display: inline-block;
-    padding: .5rem;
-    width: auto;
     padding: 1rem;
-    ;
     background-color: black;
     color: aliceblue;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
+/* Error Message */
 #error {
     display: none;
-
 }
 
-#backBtn {
+/* Buttons */
+#backBtn, .submitbtn {
     display: inline-block;
     background-color: #06917A;
     color: #ffffff;
@@ -50,6 +51,11 @@ h3 {
     border: none;
 }
 
+.submitbtn:disabled {
+    background-color: #cccccc;
+}
+
+/* Result Display */
 #resultDiv {
     display: none;
     margin: auto;
@@ -61,40 +67,18 @@ h3 {
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 20px;
-
 }
 
 .item {
-
-    margin-right: 1rem;
-    /* Space between the image and text */
+    margin-right: 1rem; /* Space between the image and text */
 }
 
 .soap-img {
-    width: 100%;
-    /* Control the image size */
+    width: 100%; /* Control the image size */
     height: auto;
 }
 
-.submitbtn {
-    display: inline-block;
-    background-color: #06917A;
-    color: #ffffff;
-    padding: 1rem;
-    margin: 2rem;
-    text-align: center;
-    border-radius: 1rem;
-    border: none;
-
-}
-
-.submitbtn:disabled {
-    background-color: #cccccc;
-
-
-}
-
-
+/* Letter Styling */
 .letter {
     text-align: center;
     border-radius: 1rem;
@@ -104,62 +88,8 @@ h3 {
     border: none;
 }
 
-#ISFJ {
-    display: none;
-}
-
-#ISTJ {
-    display: none;
-}
-
-#INFJ {
-    display: none;
-}
-
-#INTJ {
-    display: none;
-}
-
-#ISTP {
-    display: none;
-}
-
-#ISFP {
-    display: none;
-}
-
-#INFP {
-    display: none;
-}
-
-#INTP {
-    display: none;
-}
-
-#ESTP {
-    display: none;
-}
-
-#ESFP {
-    display: none;
-}
-
-#ENFP {
-    display: none;
-}
-
-#ENTP {
-    display: none;
-}
-
-#ESTJ {
-    display: none;
-}
-
-#ESFJ {
-    display: none;
-}
-
-#ENTJ {
+/* Personality Types */
+#ISFJ, #ISTJ, #INFJ, #INTJ, #ISTP, #ISFP, #INFP, #INTP,
+#ESTP, #ESFP, #ENFP, #ENTP, #ESTJ, #ESFJ, #ENTJ {
     display: none;
 }
