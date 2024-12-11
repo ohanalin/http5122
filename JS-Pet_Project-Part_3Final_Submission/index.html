@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="javascript.js"></script>
     <title>Document</title>
 </head>
 
@@ -13,23 +12,289 @@
     <div class="wrap">
         <h1>soappy</h1>
         <div>
-           <center> <h3 class="subtitle"> Please write down your MBTI</h3></center>
+
+
+            <form id="question">
+                <center>
+                    <h3 class="subtitle"> Please Write Down Your MBTI</h3>
+                </center>
+
+                <div class="formstyle">
+                    <input class="letter" type="text" id="username" name="username" maxlength="1"><br><br>
+                    <input class="letter" type="text" id="username" name="username" maxlength="1"><br><br>
+                    <input class="letter" type="text" id="username" name="username" maxlength="1"><br><br>
+                    <input class="letter" type="text" id="username" name="username" maxlength="1"><br><br>
+                </div>
+
+
+                <center>
+                    <button type="button" class="submitbtn" disabled>See Result ></button>
+
+                </center>
+
+            </form>
         </div>
-        <form>
-
-            <div class="formstyle">
-                <input class="letter" type="text" id="username" name="username" maxlength="1"><br><br>
-                <input class="letter" type="text" id="username" name="username" maxlength="1"><br><br>
-                <input class="letter" type="text" id="username" name="username" maxlength="1"><br><br>
-                <input class="letter" type="text" id="username" name="username" maxlength="1"><br><br>
-            </div>
-            <div class="error"> Please fill MBIT 16 personalities</div>
+        <div id="resultDiv">
             <center>
-                <input type="submit" value="See Result >" class="btn">
+                <h3 class="subtitle"> Your Soap Result</h3>
             </center>
-        </form>
-    </div>
+            <div class="soap-result" id="ISFJ">
+                <div class="item">
+                    <img class="soap-img" src="images/ISFJ.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2>ISFJ - The Protector</H2>
+                    <ul>
+                        <li>Color: Light lavender</li>
+                        <li>Scent: Lavender and chamomile for calming vibes</li>
+                        <li>Description: Gentle and nurturing, shaped like a soft cloud or pillow</li>
+                    </ul>
 
+                </div>
+            </div>
+            <div class="soap-result" id="ISTJ">
+                <div class="item">
+                    <img class="soap-img" src="images/ISTJ.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2>ISTJ - The Inspector</H2>
+                    <ul>
+                        <li>Color: Navy blue or dark green</li>
+                        <li>Scent: Cedarwood and sage for a clean, grounding aroma</li>
+                        <li>Description: A solid, rectangular bar that feels sturdy and dependable, just like an ISTJ.
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <center>
+
+                <div id="error"> ˙◠˙<br>
+                    Please fill MBIT 16 personalities</div>
+            </center>
+            <div class="soap-result" id="INFJ">
+
+                <div class="item">
+                    <img class="soap-img" src="images/INFJ.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2>INFJ – The Advocate</H2>
+                    <ul>
+                        <li>Color: Deep indigo or forest green</li>
+                        <li>Scent: Jasmine and frankincense, inspiring and mysterious</li>
+                        <li>Description: Crescent or moon shapes, reflecting depth and introspection.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="soap-result" id="INTJ">
+                <div class="item">
+                    <img class="soap-img" src="images/INFJ.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2> INTJ– The Advocate</H2>
+                    <ul>
+                        <li>Color: Deep indigo or forest green</li>
+                        <li>Scent: Jasmine and frankincense, inspiring and mysterious</li>
+                        <li>Description: Crescent or moon shapes, reflecting depth and introspection.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="soap-result" id="ISFJ">
+                <div class="item">
+                    <img class="soap-img" src="images/ISFJ.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2>INTJ – The Architect</H2>
+                    <ul>
+                        <li>Color: Black or metallic silver</li>
+                        <li>Scent: Bergamot and leather, bold and intellectual</li>
+                        <li>Description: Sharp, angular designs, symbolizing structure and strategic thinking.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="soap-result" id="ISTP">
+                <div class="item">
+                    <img class="soap-img" src="images/ISTP.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2>ISTP – The Virtuoso</H2>
+                    <ul>
+                        <li>Color: Gunmetal gray or olive green</li>
+                        <li>Scent: Eucalyptus and mint, refreshing and energizing</li>
+                        <li>Description: Compact and multi-functional shapes, reflecting adaptability and innovation.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="soap-result" id="INFP">
+                <div class="item">
+                    <img class="soap-img" src="images/INFP.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2>INFP – The Mediator</H2>
+                    <ul>
+                        <li>Color: Pastel peach or teal</li>
+                        <li>Scent: Rosewater and sandalwood, dreamy and comforting</li>
+                        <li>Description: Heart-shaped or gentle waves, symbolizing idealism and compassion.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="soap-result" id="INTP">
+                <div class="item">
+                    <img class="soap-img" src="images/INTP.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2> INTP – The Thinker</H2>
+                    <ul>
+                        <li>Color: Cool cyan or white</li>
+                        <li>Scent: Peppermint and tea tree, invigorating and crisp</li>
+                        <li>Description: Simple, minimalist designs, reflecting curiosity and a logical mind.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="soap-result" id="INTP">
+                <div class="item">
+                    <img class="soap-img" src="images/INTP.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2> INTP – The Thinker</H2>
+                    <ul>
+                        <li>Color: Cool cyan or white</li>
+                        <li>Scent: Peppermint and tea tree, invigorating and crisp</li>
+                        <li>Description: Simple, minimalist designs, reflecting curiosity and a logical mind.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="soap-result" id="ESTP">
+                <div class="item">
+                    <img class="soap-img" src="images/ESTP.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2> ESTP – The Entrepreneur</H2>
+                    <ul>
+                        <li>Color: Vibrant red or electric blue</li>
+                        <li>Scent: Citrus zest and ginger, bold and invigorating</li>
+                        <li>Description: Bold, dynamic shapes, such as lightning bolts or sharp angles, symbolizing
+                            energy and action.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="soap-result" id="ESFP">
+                <div class="item">
+                    <img class="soap-img" src="images/ESFP.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2> ESFP – The Entertainer</H2>
+                    <ul>
+                        <li>Color: Bright fuchsia or lime green</li>
+                        <li>Scent: Passionfruit and vanilla, playful and inviting</li>
+                        <li>Description: Fun, star-shaped or glitter-infused designs, reflecting a love for life and
+                            celebration.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="soap-result" id="ENFP">
+                <div class="item">
+                    <img class="soap-img" src="images/ENFP.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2> ENFP – The Campaigner</H2>
+                    <ul>
+                        <li>Color: Rainbow or multicolored swirls</li>
+                        <li>Scent: Orange blossom and honey, vibrant and uplifting</li>
+                        <li>Description: Whimsical and irregular shapes, embodying creativity and enthusiasm..</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="soap-result" id="ENTP">
+                <div class="item">
+                    <img class="soap-img" src="images/ENTP.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2> ENTP – The Debater</H2>
+                    <ul>
+                        <li>Color: Bright yellow or cobalt blue</li>
+                        <li>Scent: Lemongrass and ginger, zesty and energizing</li>
+                        <li>Description: Quirky, asymmetrical designs, reflecting ingenuity and a playful mind.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="soap-result" id="ESTJ">
+                <div class="item">
+                    <img class="soap-img" src="images/ESTJ.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2>ESTJ – The Executive</H2>
+                    <ul>
+                        <li>Color: Classic beige or dark brown</li>
+                        <li>Scent: Oakmoss and leather, earthy and commanding</li>
+                        <li>Description: Clean, rectangular shapes, symbolizing strength and dependability.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="soap-result" id="ESFJ">
+                <div class="item">
+                    <img class="soap-img" src="images/ESFJ.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2> ESFJ – The Consul</H2>
+                    <ul>
+                        <li>Color: Soft pink or baby blue</li>
+                        <li>Scent: Gardenia and vanilla, warm and welcoming</li>
+                        <li>Description: Rounded edges or floral patterns, reflecting sociability and care.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="soap-result" id="ENTJ">
+                <div class="item">
+                    <img class="soap-img" src="images/ENTJ.svg" alt="">
+                </div>
+                <div class="item">
+                    <H2>ENTJ – The Commander</H2>
+                    <ul>
+                        <li>Color: Metallic gold or deep crimson</li>
+                        <li>Scent: Amber and vetiver, bold and sophisticated</li>
+                        <li>Description: Sleek, sharp-edged designs, reflecting ambition and strategic vision.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <center><button type="button" id="backBtn">Back</button></center>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

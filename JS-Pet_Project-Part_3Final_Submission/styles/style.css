@@ -1,75 +1,165 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color:#D6FAF4;
+    background-color: #D6FAF4;
 }
-h1 , h3{
+
+h1,
+h3 {
     text-align: center;
 }
-.formstyle{
+
+.formstyle {
     display: flex;
     gap: .5rem;
     flex-direction: row;
 }
-.wrap{
+
+.wrap {
     padding: 2rem;
 }
-.subtitle{
- display: inline-block;
-    padding:.5rem;
+
+.soapquestion {
+    display: block;
+}
+
+.subtitle {
+    display: inline-block;
+    padding: .5rem;
     width: auto;
-    padding: 1rem;;
+    padding: 1rem;
+    ;
     background-color: black;
     color: aliceblue;
     border-radius: .5rem;
 }
-.error{
+
+#error {
     display: none;
-    margin: 0.5rem auto;
-    color:#ae009a ;
+
 }
 
-.soap-result{
- margin: auto;
-max-width: 1000px;
- display: grid;
-grid-template-columns:1fr 1fr;   
-gap: 10px;
-grid-template-areas:
-    "a b";
-}
-
-.soap-img{
-    grid-area: a;
-}
-.soap-info{
-    grid-area: b;
-    
-}
-.soappy{
-    align-items: center;
-width:70%;
-}
-.btn{
+#backBtn {
     display: inline-block;
-   
-    background-color:#06917A;
+    background-color: #06917A;
     color: #ffffff;
     padding: 1rem;
-    margin:2rem;
+    margin: 2rem;
     text-align: center;
-    border-radius:1rem;
-    border:none;
-    
+    border-radius: 1rem;
+    border: none;
 }
-.btn:disabled {
-    background-color: red
- }
- .letter{
-text-align: center;
+
+#resultDiv {
+    display: none;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.soap-result {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+}
+
+.item {
+
+    margin-right: 1rem;
+    /* Space between the image and text */
+}
+
+.soap-img {
+    width: 100%;
+    /* Control the image size */
+    height: auto;
+}
+
+.submitbtn {
+    display: inline-block;
+    background-color: #06917A;
+    color: #ffffff;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: none;
+
+}
+
+.submitbtn:disabled {
+    background-color: #cccccc;
+
+
+}
+
+
+.letter {
+    text-align: center;
     border-radius: 1rem;
     width: 100%;
     font-size: 100px;
-    background-color:#9CE6DA;
-    border:none;
- }
+    background-color: #9CE6DA;
+    border: none;
+}
+
+#ISFJ {
+    display: none;
+}
+
+#ISTJ {
+    display: none;
+}
+
+#INFJ {
+    display: none;
+}
+
+#INTJ {
+    display: none;
+}
+
+#ISTP {
+    display: none;
+}
+
+#ISFP {
+    display: none;
+}
+
+#INFP {
+    display: none;
+}
+
+#INTP {
+    display: none;
+}
+
+#ESTP {
+    display: none;
+}
+
+#ESFP {
+    display: none;
+}
+
+#ENFP {
+    display: none;
+}
+
+#ENTP {
+    display: none;
+}
+
+#ESTJ {
+    display: none;
+}
+
+#ESFJ {
+    display: none;
+}
+
+#ENTJ {
+    display: none;
+}
